@@ -42,9 +42,17 @@ li {
     margin-bottom: 0.5rem;
 }
 
+nav li a {
+    color: white;
+}
+
+.custom-toggler.navbar-toggler {
+    color: white;
+}
+
 .cool-link {
     display: inline-block;
-    color: #333333;
+    color: white;
     text-decoration: none;
 }
 
@@ -53,7 +61,7 @@ li {
     display: block;
     width: 0;
     height: 2px;
-    background: #333333;
+    background: white;
     transition: width .3s;
 }
 
@@ -64,4 +72,60 @@ li {
 
 .wrapper-top {
     margin-top: 60px;
+}
+
+
+/*----------------- BUTTON----------------------*/
+
+.butn:link,
+.butn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative
+}
+
+.butn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2)
+}
+
+.butn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.9)
+}
+
+.butn--white {
+    background-color: #fff;
+    color: #777
+}
+
+.butn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s
+}
+
+.butn--white::after {
+    background-color: #fff
+}
+
+.butn:hover::after {
+    transform: scaleX(1.5) scaleY(1.5);
+    opacity: 0
+}
+
+.butn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards
 }
