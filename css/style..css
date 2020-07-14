@@ -129,3 +129,13 @@ nav li a {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards
 }
+
+
+/*----------------- Landing text ----------------------*/
+
+#landingt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
