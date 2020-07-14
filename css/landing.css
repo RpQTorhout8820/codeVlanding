@@ -1,0 +1,199 @@
+body {
+  font-family: "proxima_novaregular";
+  font-size: 1rem;
+  padding: 0px;
+  counter-reset: my-awesome-counter;
+}
+body a:href {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.hfoto {
+  height: 1081px;
+  background: url("../img/background.png"), linear-gradient(to left, rgba(224, 105, 0, 0.9), rgba(199, 0, 46, 0.9));
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+.hfoto span {
+  font-family: "proxima_novabold";
+}
+
+.event {
+  margin-top: 150px;
+}
+.event h1 {
+  font-size: 3rem;
+  font-family: "proxima_novabold";
+}
+.event p {
+  font-size: 1.1rem;
+  color: rgba(199, 0, 46, 0.5);
+}
+.event .knoppen {
+  padding-top: 55px;
+}
+.event .btn-primary-outline {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border: 1px solid white;
+  border-radius: 24px;
+  width: 205px;
+}
+.event .btn-light {
+  border: 1px solid white;
+  border-radius: 24px;
+  width: 205px;
+  color: rgba(199, 0, 46, 0.9);
+}
+
+.navbar-brand {
+  font-size: 2.25rem;
+  font-family: "proxima_nova_altlight";
+}
+
+.part2 {
+  padding-top: 122px;
+  text-align: center;
+}
+.part2 .fig {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part2 h2 {
+  font-size: 1.8rem;
+  background: -webkit-linear-gradient(#cc3333, #ff9966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "proxima_nova_altlight";
+}
+.part2 h2b {
+  font-size: 1.8rem;
+  display: block;
+  background: -webkit-linear-gradient(#cc3333, #ff9966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "proxima_novabold";
+}
+
+.btn-price {
+  width: 200px;
+  height: 55px;
+  border: 0;
+  font-size: 1.2rem;
+  background-color: #264699;
+  margin-bottom: 100px;
+}
+
+.bg-gray {
+  background-color: #f6f6f6;
+}
+
+.nature {
+  background: url("../img/drone3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 118px;
+}
+.nature h2 {
+  background-color: #0c5460;
+  padding: 118px 0 0;
+  font-size: 1.8rem;
+  display: block;
+  background: -webkit-linear-gradient(#cc3333, #ff9966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "proxima_novabold";
+}
+.nature p {
+  margin-top: 38px;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+}
+.nature .sub-nature {
+  color: #e5e7f0;
+  vertical-align: top;
+}
+.nature .sub-nature ol {
+  list-style: none;
+  min-height: 3rem;
+}
+.nature .sub-nature ol li::before {
+  font-family: "proxima_nova_altlight";
+  counter-increment: my-awesome-counter;
+  content: counter(my-awesome-counter);
+  color: #b4bac9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 3rem;
+  text-align: center;
+  margin-left: -2.9rem;
+  margin-top: 13px;
+}
+.nature .sub-nature li {
+  position: relative;
+  margin-top: 47px;
+  background: url(../img/circle.png) left 6px no-repeat;
+  padding-left: 65px;
+}
+
+.nature2 h2 {
+  font-size: 1.8rem;
+  display: block;
+  background: -webkit-linear-gradient(#cc3333, #ff9966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "proxima_novabold";
+}
+.nature2 p {
+  line-height: 1.8rem;
+  color: #cecfd3;
+}
+
+.newsletter {
+  height: 500px;
+  background: linear-gradient(to left, rgba(224, 105, 0, 0.7), rgba(199, 0, 46, 0.7)), url("../img/newsletterbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newsletter h2 {
+  font-family: "proxima_novabold";
+  font-size: 3rem;
+  color: #fafafa;
+}
+.newsletter .btn-1 {
+  background-color: rgba(250, 250, 250, 0.15);
+  color: rgba(250, 250, 250, 0.5);
+  border: 1px solid white;
+  height: 60px;
+  width: 400px;
+}
+.newsletter .btn-2 {
+  margin-left: -100px;
+  height: 60px;
+  width: 35px;
+  border: 1px solid white;
+}
+.newsletter ::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+.newsletter :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+.newsletter ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
